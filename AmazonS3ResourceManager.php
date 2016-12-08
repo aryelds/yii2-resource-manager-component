@@ -78,7 +78,7 @@ class AmazonS3ResourceManager extends Component implements ResourceManagerInterf
 		$options = ArrayHelper::merge([
 			'Bucket' => $this->bucket,
 			'Key' => $name,
-			'SourceFile' => $file->tempName,
+			'SourceFile' => $file,
 			'ACL' => CannedAcl::PUBLIC_READ // default to ACL public read
 		], $options);
 
